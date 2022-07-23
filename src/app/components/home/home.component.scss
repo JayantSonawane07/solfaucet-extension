@@ -1,0 +1,137 @@
+@import "../../../theme/index.scss";
+
+.container {
+    position: relative;
+    height: 25rem;
+    width: 60rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 3.5rem;
+}
+
+.main-logo {
+    height: 4rem;
+}
+
+.i-icon {
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.info-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    .info-banner {
+        font-size: 1.2rem;
+        display: none;
+        position: absolute;
+        right: 1rem;
+        height: 5.5rem;
+        width: 16rem;
+        border-radius: 0.5rem;
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        color: white;
+    }
+}
+
+.info-icon:hover {
+    .info-banner {
+        display: block;
+    }
+}
+
+.devs {
+    ul {
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+.input-content {
+    margin: 2rem 0 2rem 0;
+
+    input {
+        border: 0;
+    }
+
+    input:focus {
+        outline: none !important;
+    }
+}
+
+.sol-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    margin: 0.5rem;
+}
+
+.input-values {
+    font-weight: bold;
+}
+
+.label {
+    color: $white-color;
+}
+
+.buttons {
+    div {
+        margin: 0 1.6rem;
+    }
+
+
+}
+
+
+.btn {
+    min-width: 15rem;
+    color: white !important;
+    border: 1px solid lightgray !important;
+    letter-spacing: 2px !important;
+}
+
+.test-net {
+    .btn {
+        background-color: #059669;
+    }
+}
+
+// .test-net {
+//     .btn:hover {
+//         background-color: #093628;
+//     }
+// }
+
+.dev-net {
+    .btn {
+        background-color: #3b82f6;
+    }
+}
+
+// .dev-net {
+//     .btn:hover {
+//         background-color: #183666;
+//     }
+// }

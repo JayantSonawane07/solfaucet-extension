@@ -1,0 +1,62 @@
+<div class="container padauk">
+    <div class="heading">
+        <div class="logo-title">
+            <div class="logo">
+                <img class="main-logo" src="../../../assets/icons/solana-icon.svg" alt="">
+            </div>
+            <div class="title">
+                Solana Faucet
+            </div>
+        </div>
+        <div class="info-icon">
+            <img class="i-icon" src="../../../assets/icons/info-icon.svg" alt="">
+
+            <div class="info-banner">
+                <div class="info-title">
+                    Developed and maintained by
+                </div>
+                <div class="devs">
+                    <ul>
+                        <li>Varun Kulkarni</li>
+                        <li>Jayant Sonawane</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content font-size-18">
+        <div class="row input-content">
+            <div class="col d-flex flex-column">
+                <label class="label" for="walletAddress">Wallet Address</label>
+                <input type="text" id="walletAddress" [(ngModel)]="walletAddress" placeholder="Solana account address...">
+            </div>
+            <div class="col d-flex flex-column">
+                <label class="label" for="solQty">Sol</label>
+                <input min="0" type="number" id="solQty" value="0" [(ngModel)]="solQty">
+            </div>
+        </div>
+
+        <div class="row sol-text font-size-20">
+            <div class="div">
+                Airdrop
+                <span class="input-values"> {{solQty}} </span>
+                Sol in
+                <!-- <span class="input-values">{{walletAddress}}</span>
+                to -->
+            </div>
+        </div>
+
+        <div class="buttons d-flex justify-content-center">
+            <div class="test-net">
+                <button class="btn font-size-18" (click)="transferSolToSelectedNetwork(btnTestNetLabel)"
+                    [disabled]="isTimerRunning">{{btnTestNetLabel}}</button>
+            </div>
+            <div class="dev-net">
+                <button class="btn font-size-18" (click)="transferSolToSelectedNetwork(btnDevNetLabel)"
+                    [disabled]="isTimerRunning">{{btnDevNetLabel}}</button>
+            </div>
+        </div>
+    </div>
+
+</div>

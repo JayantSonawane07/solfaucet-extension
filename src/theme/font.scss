@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Padauk";
+    src: url("../assets/fonts/Padauk/Padauk-Regular.ttf") format("truetype");
+}
+
+.padauk {
+    font-family: "Padauk", Fallback, sans-serif;
+}

@@ -1,0 +1,23 @@
+@import "./color.scss";
+
+html {
+	font-size: 62.5%; // 10px = 1rem, 12px=1.2rem, 14px=1.4rem, 16px=1.6rem
+	user-select: none;
+}
+
+//css debugger
+// * {
+// 	outline: 0.1rem solid lightblue;
+// }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
